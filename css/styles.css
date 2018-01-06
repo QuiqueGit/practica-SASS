@@ -542,18 +542,6 @@ template {
   -webkit-transform: rotate(720deg);
   transform: rotate(720deg);
 }
-/* line 32, ../sass/partials/_footer.scss */
-.footer .social .fb {
-  background-image: url('../img/imagenes/facebook2.png?1433163536');
-}
-/* line 38, ../sass/partials/_footer.scss */
-.footer .social .tw {
-  background-image: url('../img/imagenes/twitter.png?1434052935');
-}
-/* line 44, ../sass/partials/_footer.scss */
-.footer .social .ingr {
-  background-image: url('../img/imagenes/instagram19.png?1433163546');
-}
 
 /* line 1, ../sass/partials/_animaciones.scss */
 .social div {
@@ -713,7 +701,28 @@ template {
     transform: translate(0px);
   }
 }
-/* line 7, ../sass/styles.scss */
+/* line 64, imagenes/*.png */
+.imagenes-sprite, .imagenes-facebook2, .imagenes-instagram19, .imagenes-twitter {
+  background-image: url('../img/imagenes-sbb19e905f3.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.imagenes-facebook2 {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.imagenes-instagram19 {
+  background-position: 0 -64px;
+}
+
+/* line 84, ../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.imagenes-twitter {
+  background-position: 0 -128px;
+}
+
+/* line 9, ../sass/styles.scss */
 .foto {
   width: 33.33333%;
   background-repeat: no-repeat;
@@ -723,53 +732,53 @@ template {
   float: left;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 .primera {
   background-image: url('../img/sticky-notes.jpg?1433135404');
 }
-/* line 19, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 .primera .caption {
   position: relative;
   left: 10%;
   top: 30%;
 }
-/* line 24, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 .primera .caption p {
   font-size: 2vw;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 .segunda {
   background-image: url('../img/chloes.jpg?1433177108');
 }
-/* line 33, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 .segunda .caption {
   position: relative;
   left: 80%;
   top: 40%;
 }
-/* line 38, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .segunda .caption p {
   font-size: 2vw;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .tercera {
   background-image: url('../img/lazy.jpg?1433177624');
 }
-/* line 47, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .tercera .caption {
   color: black;
   position: relative;
   left: 10%;
   top: 30%;
 }
-/* line 53, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .tercera .caption p {
   font-size: 2vw;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 .carrusel {
   width: 300%;
   margin: 0;
@@ -778,18 +787,18 @@ template {
   animation: slider 20s infinite linear;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .secundario {
   width: 100%;
-  background: white;
+  background: red;
   clear: both;
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 .productos {
   margin: 720px auto 20px auto;
 }
-/* line 75, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .productos .columna {
   width: 33.33333%;
   float: left;
@@ -799,7 +808,7 @@ template {
   position: relative;
   overflow: hidden;
 }
-/* line 84, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 .productos .columna .cabecera {
   height: 80px;
   margin: auto;
@@ -807,25 +816,45 @@ template {
   background-size: 80px 80px;
   background-repeat: no-repeat;
 }
-/* line 92, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .productos .columna:nth-child(2) {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-/* line 97, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .productos .columna:nth-child(1) .cabecera {
   background-image: url('../img/user168.png?1433163638');
 }
-/* line 101, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .productos .columna:nth-child(2) .cabecera {
   background-image: url('../img/settings48.png?1433163588');
 }
-/* line 105, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .productos .columna:nth-child(3) .cabecera {
   background-image: url('../img/map35.png?1433163748');
 }
+/* line 111, ../sass/styles.scss */
+.productos .columna .fondo {
+  width: 26vw;
+  height: 17.33vw;
+  position: absolute;
+  background: rgba(255, 165, 0, 0.9);
+}
+/* line 118, ../sass/styles.scss */
+.productos .columna img {
+  position: relative;
+  width: 26vw;
+  height: 17.33vw;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 7px 7px -2px inset, rgba(0, 0, 0, 0.3) 0 5px 7px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 7px 7px -2px inset, rgba(0, 0, 0, 0.3) 0 5px 7px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 7px 7px -2px inset, rgba(0, 0, 0, 0.3) 0 5px 7px 0;
+}
+/* line 124, ../sass/styles.scss */
+.productos .columna img:hover {
+  opacity: 0.3;
+}
 
-/* line 112, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .main {
   width: 100%;
   overflow: hidden;
@@ -833,4 +862,46 @@ template {
   margin-top: -75px;
   position: fixed;
   z-index: -1;
+}
+
+/* line 141, ../sass/styles.scss */
+.social div, img {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(4) .fondo {
+  background-color: white;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(5) .fondo {
+  background-color: #ffedcc;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(6) .fondo {
+  background-color: #ffdb99;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(7) .fondo {
+  background-color: #ffc966;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(8) .fondo {
+  background-color: #ffb733;
+}
+
+/* line 148, ../sass/styles.scss */
+.columna:nth-child(9) .fondo {
+  background-color: orange;
 }
